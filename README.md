@@ -16,3 +16,7 @@ API参考：https://help.aliyun.com/zh/model-studio/developer-reference/dashscop
 - [x] Please run `DashScopeLLM_project1.py` to start multiple conversations. :tada:
 - [x] Support streaming output. :tada:
 - [x] When the user enters words such as "结束", "再见", "拜拜", "谢谢", return "感谢您的咨询，再见!". :tada:
+
+### Project1 Demo:
+![image](https://github.com/user-attachments/assets/087cac3b-cb5d-49c7-b8ea-6f2b805dfd93)
+
