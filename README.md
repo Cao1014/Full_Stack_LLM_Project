@@ -19,4 +19,7 @@ API参考：https://help.aliyun.com/zh/model-studio/developer-reference/dashscop
 
 ### Project1 Demo:
 
+![image](https://github.com/user-attachments/assets/d51e301b-1ade-48ca-9aeb-f34ae6deaeae)
+
+
 
