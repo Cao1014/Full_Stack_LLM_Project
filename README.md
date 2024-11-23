@@ -36,7 +36,7 @@ API参考：https://help.aliyun.com/zh/model-studio/developer-reference/dashscop
 3. faiss: https://docs.llamaindex.ai/en/v0.10.23/api_reference/storage/vector_store/faiss/
 
 ### Lecture2 Demo:
-- [x] 下载并配置MySQL。:tada:
+- [x] 下载并配置MySQL。 :tada:
 ```
 在终端输入命令
 cd /usr/local/mysql
