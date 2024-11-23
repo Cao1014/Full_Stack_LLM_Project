@@ -3,7 +3,7 @@
 
 >《基于AI大模型的前后端应用开发》课程仓库 by *Cao Zhengyang*
 
-## Lecture1 
+## Lecture1 Qwen Chat Bot
 
 ![img_v3_02gj_adebf020-a837-4d6f-8478-844514d4394g](https://github.com/user-attachments/assets/fbe54e38-bd35-4de3-9d9e-30f50d50c3de)
 
