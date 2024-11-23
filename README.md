@@ -3,7 +3,7 @@
 
 >《基于AI大模型的前后端应用开发》课程仓库 by *Cao Zhengyang*
 
-## Lecture1 Qwen Chat Bot
+## Lecture1: Qwen Chat Bot
 
 ![img_v3_02gj_adebf020-a837-4d6f-8478-844514d4394g](https://github.com/user-attachments/assets/fbe54e38-bd35-4de3-9d9e-30f50d50c3de)
 
@@ -24,7 +24,7 @@ API参考：https://help.aliyun.com/zh/model-studio/developer-reference/dashscop
 
 
 
-## Lecture2 RAG Offline
+## Lecture2: RAG Offline
 
 ![离线链路1-2.png](Lecture2/L2_Resources/%E7%A6%BB%E7%BA%BF%E9%93%BE%E8%B7%AF1-2.png)
 ![离线链路3-4.png](Lecture2/L2_Resources/%E7%A6%BB%E7%BA%BF%E9%93%BE%E8%B7%AF3-4.png)
