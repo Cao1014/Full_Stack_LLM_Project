@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cao Zhengyang's RAG chatbot Service (Shoes Shop DB)</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #chatbot-container {
+            width: 60%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #chatbot-window {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: #fafafa;
+        }
+
+        .message {
+            margin: 10px 0;
+        }
+
+        .user {
+            text-align: right;
+            color: #007bff;
+        }
+
+        .assistant {
+            text-align: left;
+            color: #555;
+        }
+
+        #input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #message-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #send-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #send-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-container">
+        <h1>Cao Zhengyang's RAG chatbot Service</h1>
+        <h2>(Using "RAG_Shoes_Database")</h2>
+        <div id="chatbot-window"></div>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type your message here..." />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        let historyMessages = [];
+
+        // 处理发送消息
+        $("#send-button").click(function () {
+            const userMessage = $("#message-input").val().trim();
+            if (!userMessage) return;
+
+            // 显示用户消息
+            $("#chatbot-window").append(`<div class="message user">${userMessage}</div>`);
+            $("#message-input").val("");
+
+            // 调用后端接口
+            $.ajax({
+                url: "/chatbot",
+                method: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    message: userMessage,
+                    historyMessages: historyMessages
+                }),
+                success: function (response) {
+                    // 显示助手回复
+                    $("#chatbot-window").append(`<div class="message assistant">${response.response}</div>`);
+                    historyMessages.push(userMessage, response.response);
+                    $("#chatbot-window").scrollTop($("#chatbot-window")[0].scrollHeight);
+                },
+                error: function (xhr) {
+                    $("#chatbot-window").append(`<div class="message assistant">Error: ${xhr.responseJSON.error}</div>`);
+                }
+            });
+        });
+
+        // 按回车发送消息
+        $("#message-input").keypress(function (e) {
+            if (e.which == 13) {
+                $("#send-button").click();
+            }
+        });
+    </script>
+</body>
+</html>

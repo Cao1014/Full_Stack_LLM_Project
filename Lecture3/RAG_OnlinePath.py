@@ -54,23 +54,50 @@ class OnlinePath:
         context += f"\n用户查询：{query}\n"
         return context
 
+    # def query_llm(self, context: str) -> str:
+    #     messages = self.messages + [{"role": "user", "content": context}]
+    #     try:
+    #         response_stream = self.client.chat.completions.create(
+    #             model=self.model,
+    #             messages=messages,
+    #             stream=self.stream,
+    #             max_tokens=self.max_tokens,
+    #             temperature=self.temperature,
+    #         )
+    #         full_response = ""
+    #         print("AI: ", end="", flush=True)
+    #         for chunk in response_stream:
+    #             delta = chunk.choices[0].delta
+    #             if delta and delta.content:
+    #                 print(delta.content, end="", flush=True)
+    #                 full_response += delta.content
+    #         print()  # 换行
+    #         self.messages.append({"role": "assistant", "content": full_response})
+    #         return full_response
+    #     except Exception as e:
+    #         print(f"\n调用 OpenAI 接口时出错：{e}")
+    #         return "对不起，当前无法生成回复。"
     def query_llm(self, context: str) -> str:
+        """
+        调用 OpenAI API 接口生成回答，支持流式输出。
+        """
         messages = self.messages + [{"role": "user", "content": context}]
         try:
             response_stream = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                stream=self.stream,
+                stream=True,
                 max_tokens=self.max_tokens,
                 temperature=self.temperature,
             )
             full_response = ""
             print("AI: ", end="", flush=True)
             for chunk in response_stream:
-                delta = chunk.choices[0].delta
-                if delta and delta.content:
-                    print(delta.content, end="", flush=True)
-                    full_response += delta.content
+                if hasattr(chunk, "choices") and chunk.choices:
+                    delta = chunk.choices[0].delta
+                    if delta and delta.content:
+                        print(delta.content, end="", flush=True)  # 实时输出
+                        full_response += delta.content
             print()  # 换行
             self.messages.append({"role": "assistant", "content": full_response})
             return full_response
