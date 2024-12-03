@@ -2,6 +2,8 @@
 
 
 >《基于AI大模型的前后端应用开发》课程仓库 by *Cao Zhengyang*
+> 
+-----------------------------------------------------------
 
 ## Lecture1: Qwen Chat Bot
 
@@ -22,7 +24,7 @@ API参考：https://help.aliyun.com/zh/model-studio/developer-reference/dashscop
 ![img.png](Lecture1/Qwen chat bot流式输出.png)
 
 
-
+-----------------------------------------------------------
 
 ## Lecture2: RAG Offline
 
@@ -91,3 +93,19 @@ SELECT * FROM my_table;
 
 - [x] 运行脚本`01_write_to_faiss_test.py`，测试向量写入 FAISS 索引的效果。 :tada:
 ![faiss测试结果图片.png](Lecture2/L2_Resources/faiss%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C%E5%9B%BE%E7%89%87.png)
+
+-----------------------------------------------------------
+## Lecture3: RAG Shoes Shop Chatbot
+
+
+【参考文档】
+
+1. https:////docs.llamaindex.ai/en/stable/understanding/
+2. https://github.com/datawhalechina/tiny-universe/blob/main/README.md
+
+
+- [x] 运行脚本`RAG_HTTP_Service.py`打开chatbot网页。  :tada:
+![chatbot示意图.png](Lecture3/L3_Resources/chatbot%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+
+- [x] 即可开始与chatbot进行鞋类知识RAG对话！ :tada:
+
