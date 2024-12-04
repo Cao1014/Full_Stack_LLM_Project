@@ -39,7 +39,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             color: #fff;
-
         }
 
         #config-container.day-mode {
@@ -71,7 +70,7 @@
             padding: 10px;
             background: #2c2f33;
             color: #fff;
-            font-size: 18px;
+            font-size: 15px;
             margin-top: 20px; /* 保证不被配置框遮挡 */
         }
 
@@ -122,7 +121,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 18px;
+            font-size: 15px;
         }
 
         #send-button:hover {
@@ -158,13 +157,13 @@
 
         /* 日间模式下标题颜色 */
         body.day-mode h1, body.day-mode h2 {
-            color: #333;
+            color: #fff; /* 设置为白色 */
         }
     </style>
 </head>
 <body>
     <!-- 日间模式/夜间模式按钮 -->
-    <button id="mode-toggle">Switch to Night Mode</button>
+    <button id="mode-toggle">Switch to Day Mode</button>
 
     <div id="chatbot-container">
         <h1>Cao Zhengyang's RAG Chatbot Service</h1>
@@ -178,7 +177,7 @@
             <div class="config-item"><strong>MODEL_NAME:</strong> qwen-plus</div>
             <div class="config-item"><strong>MAX_TOKENS:</strong> 300</div>
             <div class="config-item"><strong>TEMPERATURE:</strong> 0.7</div>
-            <div class="config-item"><strong>STREAM:</strong> False</div>
+            <div class="config-item"><strong>STREAM:</strong> True</div>
         </div>
 
         <!-- Chatbot Window -->
@@ -190,11 +189,11 @@
         </div>
     </div>
 
-    <script>
-    let historyMessages = [];
+<script>
+    let historyMessages = []; // 保存历史消息
 
     // 切换日间/夜间模式
-    $("#mode-toggle").click(function() {
+    $("#mode-toggle").click(function () {
         $("body").toggleClass("day-mode");
         $("#chatbot-window").toggleClass("day-mode");
         $("#config-container").toggleClass("day-mode");
@@ -211,36 +210,44 @@
         $("#chatbot-window").append(`<div class="message user">${userMessage}</div>`);
         $("#message-input").val("");
 
-        // 调用后端接口
-        $.ajax({
-            url: "/chatbot",  // 确保是 POST 请求
-            method: "POST",  // 使用 POST 请求
-            contentType: "application/json",
-            data: JSON.stringify({
-                message: userMessage,
-                historyMessages: historyMessages
-            }),
-            success: function (response) {
-                // 将返回的文本中的换行符替换为 <br>
-                let assistantResponse = response.response.replace(/\n/g, '<br>');
+        // 调用后端 SSE 接口
+        const eventSource = new EventSource(`/chatbot_stream?message=${encodeURIComponent(userMessage)}&historyMessages=${encodeURIComponent(JSON.stringify(historyMessages))}`);
+        let assistantResponse = ""; // 保存助手的完整响应
 
-                // 显示助手回复
-                $("#chatbot-window").append(`<div class="message assistant">${assistantResponse}</div>`);
-                historyMessages.push(userMessage, assistantResponse);
-                $("#chatbot-window").scrollTop($("#chatbot-window")[0].scrollHeight);
-            },
-            error: function (xhr) {
-                $("#chatbot-window").append(`<div class="message assistant">Error: ${xhr.responseJSON.error}</div>`);
+        // 监听流式消息
+        eventSource.onmessage = function (event) {
+            assistantResponse += event.data; // 累积流式返回的数据
+
+            // 渲染助手消息，替换换行符为 HTML 格式
+            const formattedResponse = assistantResponse.replace(/\n/g, "<br>");
+            const assistantMessageDiv = $("#chatbot-window .assistant:last");
+
+            if (assistantMessageDiv.length) {
+                // 更新最后一个助手响应内容
+                assistantMessageDiv.html(formattedResponse);
+            } else {
+                // 如果是首次助手响应，创建一个新消息容器
+                $("#chatbot-window").append(`<div class="message assistant">${formattedResponse}</div>`);
             }
-        });
+
+            // 滚动到底部
+            $("#chatbot-window").scrollTop($("#chatbot-window")[0].scrollHeight);
+        };
+
+        // 错误处理
+        eventSource.onerror = function () {
+            eventSource.close(); // 关闭 SSE 连接
+            historyMessages.push(userMessage, assistantResponse); // 保存到历史记录
+        };
     });
 
     // 按回车发送消息
     $("#message-input").keypress(function (e) {
-        if (e.which == 13) {
+        if (e.which == 13 && !e.shiftKey) { // 按下 Enter 且未按下 Shift
+            e.preventDefault(); // 阻止默认换行行为
             $("#send-button").click();
         }
     });
-    </script>
+</script>
 </body>
 </html>
