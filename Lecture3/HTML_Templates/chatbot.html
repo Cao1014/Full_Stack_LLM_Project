@@ -210,6 +210,10 @@
         $("#chatbot-window").append(`<div class="message user">${userMessage}</div>`);
         $("#message-input").val("");
 
+        // 创建一个新的回答容器
+        const answerContainer = $("<div class='answer-container'></div>");
+        $("#chatbot-window").append(answerContainer);
+
         // 调用后端 SSE 接口
         const eventSource = new EventSource(`/chatbot_stream?message=${encodeURIComponent(userMessage)}&historyMessages=${encodeURIComponent(JSON.stringify(historyMessages))}`);
         let assistantResponse = ""; // 保存助手的完整响应
@@ -220,15 +224,9 @@
 
             // 渲染助手消息，替换换行符为 HTML 格式
             const formattedResponse = assistantResponse.replace(/\n/g, "<br>");
-            const assistantMessageDiv = $("#chatbot-window .assistant:last");
 
-            if (assistantMessageDiv.length) {
-                // 更新最后一个助手响应内容
-                assistantMessageDiv.html(formattedResponse);
-            } else {
-                // 如果是首次助手响应，创建一个新消息容器
-                $("#chatbot-window").append(`<div class="message assistant">${formattedResponse}</div>`);
-            }
+            // 更新当前问题的回答容器
+            answerContainer.html(formattedResponse);
 
             // 滚动到底部
             $("#chatbot-window").scrollTop($("#chatbot-window")[0].scrollHeight);
