@@ -1,0 +1,193 @@
+2024-12-10 15:30:44 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 26266 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 15:30:44 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 15:30:44 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 15:53:29 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 33558 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 15:53:29 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 15:53:29 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 15:58:24 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 35211 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 15:58:24 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 15:58:24 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 16:13:23 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 40023 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 16:13:23 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 16:13:23 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 16:19:28 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 41959 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 16:19:28 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 16:19:28 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 16:26:08 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 44037 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 16:26:08 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 16:26:08 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 17:20:32 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 47043 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 17:20:32 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 17:20:32 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 17:21:46 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 47141 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 17:21:46 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 17:21:46 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 17:22:08 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 47174 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 17:22:08 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 17:22:08 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:01:18 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 54649 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:01:18 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:01:18 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:01:40 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 54684 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:01:40 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:01:40 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:13:05 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 55519 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:13:05 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:13:05 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:13:18 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 55541 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:13:18 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:13:18 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:25:54 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 56398 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:25:54 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:25:54 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:26:05 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 56414 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:26:05 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:26:05 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 20:26:55 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 56543 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 20:26:55 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 20:26:55 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:15:30 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 60200 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:15:30 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:15:30 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:16:15 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 60255 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:16:15 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:16:15 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:27:01 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 61057 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:27:01 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:27:01 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:27:02 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.102 seconds (JVM running for 1.36)
+2024-12-10 21:43:28 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62274 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:43:28 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:43:28 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:43:29 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.247 seconds (JVM running for 1.492)
+2024-12-10 21:47:15 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62538 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:47:15 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:47:15 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:47:16 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.15 seconds (JVM running for 1.456)
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子品牌选择(String), defaultModel(String), {}(String)
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子品牌选择(String), {}(String)
+2024-12-10 21:47:34 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-10 21:47:34 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 1
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-10 21:48:03 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 1
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-10 21:48:07 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 1
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子怎么选(String), defaultModel(String), {}(String)
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 2(Integer), user(String), TEXT(String), 鞋子怎么选(String), {}(String)
+2024-12-10 21:48:29 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 2(Integer)
+2024-12-10 21:48:29 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 1
+2024-12-10 21:50:33 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62766 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:50:33 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:50:33 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:50:34 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.087 seconds (JVM running for 1.345)
+2024-12-10 21:50:40 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:50:40 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:50:40 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:50:44 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:50:44 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:50:44 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:50:51 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:50:51 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:50:51 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:50:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:50:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:50:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:05 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62808 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:51:05 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:51:05 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:51:06 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.107 seconds (JVM running for 1.359)
+2024-12-10 21:51:11 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:11 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:11 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:33 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62846 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:51:33 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:51:33 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:51:34 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.076 seconds (JVM running for 1.318)
+2024-12-10 21:51:47 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:47 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:47 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:48 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:48 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:48 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:48 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:48 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:48 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:49 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:49 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:49 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:49 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:49 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:49 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:51:50 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:51:50 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:51:50 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:06 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 62890 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:52:06 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:52:06 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:52:07 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.082 seconds (JVM running for 1.334)
+2024-12-10 21:52:16 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:16 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:16 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:17 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:17 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:17 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:17 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:17 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:17 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:18 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:18 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:18 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:18 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:18 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:18 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:52:19 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:52:19 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 2(Integer)
+2024-12-10 21:52:19 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-10 21:53:49 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 63011 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:53:49 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:53:49 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:53:50 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.149 seconds (JVM running for 1.412)
+2024-12-10 21:55:27 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 63124 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:55:27 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:55:27 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:55:28 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.105 seconds (JVM running for 1.371)
+2024-12-10 21:58:08 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 63314 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course1)
+2024-12-10 21:58:08 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-10 21:58:08 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-10 21:58:09 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.083 seconds (JVM running for 1.335)
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子(String), defaultModel(String), {}(String)
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子(String), {}(String)
+2024-12-10 21:58:33 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-10 21:58:33 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 1
