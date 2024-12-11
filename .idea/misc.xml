@@ -3,5 +3,8 @@
   <component name="Black">
     <option name="sdkName" value="Full_Stack_LLM_Project_env" />
   </component>
+  <component name="PWA">
+    <option name="wasEnabledAtLeastOnce" value="true" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Full_Stack_LLM_Project_env" project-jdk-type="Python SDK" />
 </project>
