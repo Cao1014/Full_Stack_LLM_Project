@@ -1,0 +1,86 @@
+server:
+  port: 8081
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.web.servlet.view: DEBUG
+    org.springframework.web.servlet.view.velocity: DEBUG
+  config: classpath:log4j2-spring.xml
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    cache: false
+  #  thymeleaf:
+#    enabled: false
+  resources:
+    static-locations: classpath:/static/
+  application:
+    name: ai_manager
+  #MQTT配置信息
+  mqtt:
+    #MQTT服务端地址，端口默认为1883，如果有多个，用逗号隔开
+    url: tcp://127.0.0.1:1883
+    #用户名
+    username: admin
+    #密码
+    password: glsg12345678
+    #客户端id（不能重复）
+    client:
+      consumer:
+        id: consumer-id
+        topic: spring_send_topic
+      provider:
+        id: provider-id
+        topic: spring_send_topic
+  ai:
+    chat-url: http://localhost:8080/chat
+    stream-chat-url: http://localhost:8080/streamChat
+  redis:
+    host: localhost
+    # 连接超时时间（记得添加单位，Duration）
+    timeout: 10000ms
+    # Redis默认情况下有16个分片，这里配置具体使用的分片
+    # database: 0
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1ms
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 8
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 0
+  cache:
+    # 一般来说是不用配置的，Spring Cache 会根据依赖的包自行装配
+    type: redis
+  datasource:
+#    url: jdbc:mysql://10.0.0.25:3306/spring_boot_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    username: root
+    password: cao1014#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    initialization-mode: always
+    continue-on-error: true
+    schema:
+      - "classpath:db/schema.sql"
+    data:
+      - "classpath:db/*.sql"
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: SpringBootDemoHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+mybatis:
+  configuration:
+    # 下划线转驼峰
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.example.base.entity

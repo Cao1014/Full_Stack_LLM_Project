@@ -32,20 +32,25 @@ def index():
     """
     return render_template("chatbot.html")
 
-@app.route("/chatbot_stream", methods=["GET"])
+@app.route("/chatbot_stream", methods=["GET", "POST"])
 def chatbot_stream():
     """
-    流式聊天功能的 HTTP 接口。
-    使用 GET 请求方式，接收以下 URL 参数：
-    - message: 用户输入内容
-    - historyMessages: 历史聊天记录（JSON 格式的字符串）
-    :return: 流式响应生成器
+    支持流式聊天功能的 HTTP 接口。
+    - GET 请求：使用 URL 参数传递 `message` 和 `historyMessages`
+    - POST 请求：使用 JSON 格式的请求体传递参数
     """
     try:
-        # 获取 URL 参数
-        user_input = request.args.get("message", "").strip()
-        history_messages = eval(request.args.get("historyMessages", "[]"))
+        if request.method == "POST":
+            # 从 POST 请求体中解析参数
+            data = request.get_json()
+            user_input = data.get("message", "").strip()
+            history_messages = data.get("historyMessages", [])
+        elif request.method == "GET":
+            # 从 GET URL 参数中解析参数
+            user_input = request.args.get("message", "").strip()
+            history_messages = eval(request.args.get("historyMessages", "[]"))
 
+        # 参数校验
         if not user_input:
             return Response("data: Error: message cannot be empty\n\n", content_type="text/event-stream")
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="983eec6d-c9c6-4d4d-ac43-e8292d7efffa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/logs/demo-common.log" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/logs/demo-common.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/logs/demo-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/logs/demo-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/logs/user-portrait-biz.log" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/logs/user-portrait-biz.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/controller/ConversationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/controller/ConversationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/core/service/ChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/core/service/ChatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/core/service/ConversationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/src/main/java/org/uestc/weglas/core/service/ConversationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/ai-manager.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/ai-manager.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/ai-manager.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/ai-manager.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/controller/ConversationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/controller/ConversationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/core/service/ChatServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/core/service/ChatServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/core/service/ConversationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ai_manager_course1/target/classes/org/uestc/weglas/core/service/ConversationServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2q4O92naMDDu1oCZzgsqpJFBsLG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="983eec6d-c9c6-4d4d-ac43-e8292d7efffa" name="Changes" comment="" />
+      <created>1733918225127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733918225127</updated>
+      <workItem from="1733918226171" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,699 @@
+2024-12-12 01:21:19 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 24954 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:21:19 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:21:19 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:21:20 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.047 seconds (JVM running for 1.27)
+2024-12-12 01:21:32 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 24970 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:21:32 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:21:32 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:21:32 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.074 seconds (JVM running for 1.303)
+2024-12-12 01:22:16 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 25096 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:22:16 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:22:16 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:22:17 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.082 seconds (JVM running for 1.302)
+2024-12-12 01:23:41 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:23:41 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:23:41 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:24:10 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:10 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:10 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子怎么选(String), defaultModel(String), {}(String)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 01:24:33 [http-nio-8081-exec-10] ERROR org.uestc.weglas.core.service.ChatServiceImpl - Error occurred while calling chat API
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 NOT FOUND
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:85) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:57) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子怎么选(String), {}(String)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), Error occurred.(String), {}(String)
+2024-12-12 01:24:33 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:24:51 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:51 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:51 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:24:52 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:52 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:52 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:24:55 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:55 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:55 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:24:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:24:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:24:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:25:16 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 25298 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:25:16 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:25:16 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:25:16 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.034 seconds (JVM running for 1.475)
+2024-12-12 01:25:21 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:25:21 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:25:21 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子怎么选(String), defaultModel(String), {}(String)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 01:25:26 [http-nio-8081-exec-9] ERROR org.uestc.weglas.core.service.ChatServiceImpl - Error occurred while calling chat API
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 NOT FOUND
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:85) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:57) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子怎么选(String), {}(String)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), Error occurred.(String), {}(String)
+2024-12-12 01:25:26 [http-nio-8081-exec-9] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:25:26 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:33:30 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 25875 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:33:30 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:33:30 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:33:31 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.063 seconds (JVM running for 1.281)
+2024-12-12 01:33:36 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:33:36 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:33:36 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:33:37 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:33:37 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:33:37 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:34:09 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:34:09 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:34:09 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:34:31 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:34:31 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:34:31 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子品牌有哪些(String), defaultModel(String), {}(String)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 01:34:47 [http-nio-8081-exec-2] ERROR org.uestc.weglas.core.service.ChatServiceImpl - 调用 chat 接口时发生错误
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 NOT FOUND
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:85) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:52) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子品牌有哪些(String), {}(String)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), 调用 AI 接口时出错。(String), {}(String)
+2024-12-12 01:34:47 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:34:47 [http-nio-8081-exec-10] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:41:44 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 26446 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:41:44 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:41:44 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:41:44 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.116 seconds (JVM running for 1.377)
+2024-12-12 01:41:52 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:41:52 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:41:52 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:41:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:41:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:41:57 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:42:04 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:42:04 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:42:04 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子大小(String), defaultModel(String), {}(String)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 01:42:10 [http-nio-8081-exec-8] ERROR org.uestc.weglas.core.service.ChatServiceImpl - 调用 Python /chat 接口时发生错误: 405 METHOD NOT ALLOWED
+org.springframework.web.client.HttpClientErrorException$MethodNotAllowed: 405 METHOD NOT ALLOWED
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:87) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:49) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子大小(String), {}(String)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), 调用 Python AI 接口时出错。(String), {}(String)
+2024-12-12 01:42:10 [http-nio-8081-exec-8] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:42:10 [http-nio-8081-exec-5] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 01:47:14 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 26845 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 01:47:14 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 01:47:14 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 01:47:15 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.062 seconds (JVM running for 1.325)
+2024-12-12 01:47:24 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:47:24 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:47:24 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 01:47:27 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:47:27 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:47:27 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子售后(String), defaultModel(String), {}(String)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 01:47:34 [http-nio-8081-exec-7] ERROR org.uestc.weglas.core.service.ChatServiceImpl - 调用 Python /chat 接口时发生错误: 405 METHOD NOT ALLOWED
+org.springframework.web.client.HttpClientErrorException$MethodNotAllowed: 405 METHOD NOT ALLOWED
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:87) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:49) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子售后(String), {}(String)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), 调用 Python AI 接口时出错。(String), {}(String)
+2024-12-12 01:47:34 [http-nio-8081-exec-7] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 01:47:34 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 02:16:08 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 28852 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 02:16:08 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 02:16:08 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 02:18:14 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 29025 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 02:18:14 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 02:18:14 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 02:19:26 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 29138 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 02:19:26 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 02:19:26 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 02:19:27 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.067 seconds (JVM running for 1.288)
+2024-12-12 02:20:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 02:20:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:33 [http-nio-8081-exec-1] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 02:20:38 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 02:20:38 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:38 [http-nio-8081-exec-2] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 0
+2024-12-12 02:20:43 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 02:20:43 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 02:20:43 [http-nio-8081-exec-3] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 0
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation` (`title`, `llm_model`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - ==> Parameters: 鞋子大小(String), defaultModel(String), {}(String)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.insert - <==    Updates: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 0
+2024-12-12 02:20:53 [http-nio-8081-exec-6] ERROR org.uestc.weglas.core.service.ChatServiceImpl - 调用 Python /chat 接口时发生错误: 405 METHOD NOT ALLOWED
+org.springframework.web.client.HttpClientErrorException$MethodNotAllowed: 405 METHOD NOT ALLOWED
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:87) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:444) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.uestc.weglas.core.service.ChatServiceImpl.chat(ChatServiceImpl.java:49) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.doChat(ConversationController.java:115) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.access$100(ConversationController.java:26) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController$3.execute(ConversationController.java:73) ~[classes/:?]
+	at org.uestc.weglas.util.template.BizTemplate.execute(BizTemplate.java:71) ~[classes/:?]
+	at org.uestc.weglas.controller.ConversationController.addConversation(ConversationController.java:61) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_431]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_431]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_431]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_431]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_431]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_431]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.lang.Thread.run(Thread.java:750) ~[?:1.8.0_431]
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), user(String), TEXT(String), 鞋子大小(String), {}(String)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==>  Preparing: UPDATE `ai_conversation` SET `gmt_modified` = CURRENT_TIMESTAMP() WHERE `id` = ? 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.updateGmtModifiedById - <==    Updates: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==>  Preparing: INSERT INTO `ai_conversation_chat_detail` (`conversation_id`, `role`, `type`,`content`, `ext`, `gmt_create`, `gmt_modified`) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP()) 
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - ==> Parameters: 1(Integer), assistant(String), TEXT(String), 调用 Python AI 接口时出错。(String), {}(String)
+2024-12-12 02:20:53 [http-nio-8081-exec-6] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.insert - <==    Updates: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==>  Preparing: SELECT * FROM ai_conversation WHERE id = ? 
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectById - <==      Total: 1
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==>  Preparing: SELECT * FROM ai_conversation_chat_detail WHERE conversation_id = ? order by gmt_create 
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - ==> Parameters: 1(Integer)
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationChatDetailMapper.selectByConversationId - <==      Total: 2
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==>  Preparing: SELECT * FROM ai_conversation order by gmt_modified DESC 
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - ==> Parameters: 
+2024-12-12 02:20:53 [http-nio-8081-exec-4] DEBUG org.uestc.weglas.base.mapper.ConversationMapper.selectAll - <==      Total: 1
+2024-12-12 02:21:18 [main] INFO  org.uestc.weglas.AiManageApplication - Starting AiManageApplication on CzyMacbookPro with PID 29270 (/Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2/target/classes started by caozhengyang in /Users/caozhengyang/Desktop/Full_Stack_LLM_Project/JavaCode/ai_manager_course2)
+2024-12-12 02:21:18 [main] DEBUG org.uestc.weglas.AiManageApplication - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2024-12-12 02:21:18 [main] INFO  org.uestc.weglas.AiManageApplication - No active profile set, falling back to default profiles: default
+2024-12-12 02:21:19 [main] INFO  org.uestc.weglas.AiManageApplication - Started AiManageApplication in 1.271 seconds (JVM running for 1.911)

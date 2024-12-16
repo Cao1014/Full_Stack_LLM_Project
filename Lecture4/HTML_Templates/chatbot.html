@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cao Zhengyang's RAG Chatbot Service</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2f33;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* 日间模式 */
+        body.day-mode {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        #chatbot-container {
+            width: 70%;
+            margin: 50px auto;
+            background: #23272a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 配置框 */
+        #config-container {
+            width: 70%;
+            margin: 10px auto;
+            background: #23272a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        #config-container.day-mode {
+            background: #fff;
+            color: #333;
+        }
+
+        #config-container h3 {
+            color: #7289da;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .config-item {
+            margin: 5px 0;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        .config-item strong {
+            color: #99aab5;
+        }
+
+        #chatbot-window {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #99aab5;
+            border-radius: 5px;
+            padding: 10px;
+            background: #2c2f33;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 20px; /* 保证不被配置框遮挡 */
+        }
+
+        #chatbot-window.day-mode {
+            background: #fff;
+            color: #333;
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .user {
+            text-align: right;
+            background-color: #7289da;
+            color: #fff;
+        }
+
+        .assistant {
+            text-align: left;
+            background-color: #444b52;
+            color: #ddd;
+        }
+
+        #input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #message-input {
+            flex: 1;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            resize: none;
+            font-size: 15px;
+        }
+
+        #send-button {
+            padding: 10px 20px;
+            background: #7289da;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        #send-button:hover {
+            background: #5b6eae;
+        }
+
+        #streaming-message {
+            font-style: italic;
+            color: #99aab5;
+        }
+
+        /* 日间模式按钮 */
+        #mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #7289da;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #mode-toggle:hover {
+            background: #5b6eae;
+        }
+
+        /* 标题颜色保持不变 */
+        h1, h2 {
+            color: #fff;
+        }
+
+        /* 日间模式下标题颜色 */
+        body.day-mode h1, body.day-mode h2 {
+            color: #fff; /* 设置为白色 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 日间模式/夜间模式按钮 -->
+    <button id="mode-toggle">Switch to Day Mode</button>
+
+    <div id="chatbot-container">
+        <h1>Cao Zhengyang's RAG Chatbot Service</h1>
+        <h2>(Using "RAG_Shoes_Database")</h2>
+
+        <!-- Current Configuration -->
+        <div id="config-container">
+            <h3>Current Configuration:</h3>
+            <div class="config-item"><strong>FAISS_INDEX_FILE:</strong> L3_Resources/shoes_faiss_index.index</div>
+            <div class="config-item"><strong>DASH_API_KEY:</strong> (Hidden for security)</div>
+            <div class="config-item"><strong>MODEL_NAME:</strong> qwen-plus</div>
+            <div class="config-item"><strong>MAX_TOKENS:</strong> 300</div>
+            <div class="config-item"><strong>TEMPERATURE:</strong> 0.7</div>
+            <div class="config-item"><strong>STREAM:</strong> True</div>
+        </div>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window"></div>
+        <div id="streaming-message"></div>
+        <div id="input-container">
+            <textarea id="message-input" placeholder="Type your message here..." rows="4"></textarea>
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+<script>
+    let historyMessages = []; // 保存历史消息
+
+    // 切换日间/夜间模式
+    $("#mode-toggle").click(function () {
+        $("body").toggleClass("day-mode");
+        $("#chatbot-window").toggleClass("day-mode");
+        $("#config-container").toggleClass("day-mode");
+        const currentMode = $("body").hasClass("day-mode") ? "Night" : "Day";
+        $("#mode-toggle").text(`Switch to ${currentMode} Mode`);
+    });
+
+    // 处理发送消息
+    $("#send-button").click(function () {
+        const userMessage = $("#message-input").val().trim();
+        if (!userMessage) return;
+
+        // 显示用户消息
+        $("#chatbot-window").append(`<div class="message user">${userMessage}</div>`);
+        $("#message-input").val("");
+
+        // 创建一个新的回答容器
+        const answerContainer = $("<div class='answer-container'></div>");
+        $("#chatbot-window").append(answerContainer);
+
+        // 调用后端 SSE 接口
+        const eventSource = new EventSource(`/chatbot_stream?message=${encodeURIComponent(userMessage)}&historyMessages=${encodeURIComponent(JSON.stringify(historyMessages))}`);
+        let assistantResponse = ""; // 保存助手的完整响应
+
+        // 监听流式消息
+        eventSource.onmessage = function (event) {
+            assistantResponse += event.data; // 累积流式返回的数据
+
+            // 渲染助手消息，替换换行符为 HTML 格式
+            const formattedResponse = assistantResponse.replace(/\n/g, "<br>");
+
+            // 更新当前问题的回答容器
+            answerContainer.html(formattedResponse);
+
+            // 滚动到底部
+            $("#chatbot-window").scrollTop($("#chatbot-window")[0].scrollHeight);
+        };
+
+        // 错误处理
+        eventSource.onerror = function () {
+            eventSource.close(); // 关闭 SSE 连接
+            historyMessages.push(userMessage, assistantResponse); // 保存到历史记录
+        };
+    });
+
+    // 按回车发送消息
+    $("#message-input").keypress(function (e) {
+        if (e.which == 13 && !e.shiftKey) { // 按下 Enter 且未按下 Shift
+            e.preventDefault(); // 阻止默认换行行为
+            $("#send-button").click();
+        }
+    });
+</script>
+</body>
+</html>

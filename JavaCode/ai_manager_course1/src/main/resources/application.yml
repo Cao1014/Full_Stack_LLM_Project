@@ -19,9 +19,11 @@ spring:
   application:
     name: ai_manager
   ai:
-    # chat-url: http://localhost:8080/chat
-    chat-url: http://127.0.0.1:8080
-    # stream-chat-url: http://localhost:8080/streamChat
+    chat-url: http://127.0.0.1:8080/chat
+    stream-chat-url: http://127.0.0.1:8080/streamChat
+#    # chat-url: http://localhost:8080/chat
+#    chat-url: http://127.0.0.1:8080
+#    # stream-chat-url: http://localhost:8080/streamChat
   redis:
     host: localhost
     # 连接超时时间（记得添加单位，Duration）
